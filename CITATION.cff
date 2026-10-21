@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+title: Membrane Capacity
+version: 0.1.0
+date-released: 2026-10-21
+authors:
+  - family-names: Brisson
+    given-names: Jean-François
+    orcid: https://orcid.org/0009-0000-9778-5374
+license: AGPL-3.0-only
+repository-code: https://github.com/sparkainlp-x/membrane-capacity
+abstract: >-
+  Seeded capacity sweep for a complex outer-product holographic
+  memory: random pattern libraries, noisy probes, one-shot
+  projection as the classifier. Finds classification capacity far
+  above N for random patterns at low noise, and a graceful
+  breakdown curve at heavy noise with P90 pinned. Distinguishes
+  classification capacity from Hopfield recall capacity; honest
+  limits documented.
+keywords:
+  - holographic-memory
+  - capacity
+  - complex-hopfield
+  - associative-memory
+  - wave-computing
