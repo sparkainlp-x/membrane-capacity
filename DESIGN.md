@@ -48,7 +48,8 @@ moves P90 at this noise level — though large-P accuracy is better
 is the binding constraint.
 
 Crosstalk floor: mean |⟨a|b⟩| over random pattern pairs matches the
-theory √(π/4N) to < 2% at N = 64 and N = 128 — the noise the
+theory √(π/4N): 0.1102 vs 0.1108 (0.5%) at N = 64 and 0.0802 vs
+0.0783 (2.4%) at N = 128 (SYNTHETIC) — the noise the
 classifier is fighting is exactly characterized.
 
 ## What the numbers mean
