@@ -1,5 +1,7 @@
 # Membrane Capacity
 
+**Live demo:** [Holographic Thoughts — Shatterpoint](https://sparkainlp-x.github.io/holographic-thoughts/) (interactive browser view; synthetic, classical simulation; measured numbers are in this repo)
+
 **How many patterns can a complex holographic memory hold before
 recognition breaks?**
 
