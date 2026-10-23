@@ -2,12 +2,21 @@
 
 **Live demo:** [Holographic Thoughts — Shatterpoint](https://sparkainlp-x.github.io/holographic-thoughts/) (interactive browser view; synthetic, classical simulation; measured numbers are in this repo)
 
-**How many patterns can a complex holographic memory hold before
-recognition breaks?**
+Membrane Capacity is a reproducible, seeded Python study of pattern
+capacity in a complex outer-product holographic-memory **model**. At
+low probe noise, one-shot classification remains perfect well beyond
+the memory dimension; measured crosstalk closely tracks the
+theoretical √(π/4N) floor. Results are synthetic and do not yet
+validate a physical holographic device.
 
-Seeded capacity sweep for the outer-product holographic membrane:
-random patterns, noisy probes, one-shot projection as the
-classifier. Stdlib-only Python. AGPL-3.0.
+**What this claims:** capacity behaviour of a synthetic complex
+outer-product memory model under one-shot projection classification.
+It does **not** claim that a physical holographic membrane has been
+demonstrated or validated.
+
+Seeded capacity sweep: random patterns, noisy probes, one-shot
+projection (argmax |⟨p|probe⟩|) as the classifier. Stdlib-only
+Python. AGPL-3.0.
 
 ## Verified (SYNTHETIC — seeded simulation, output of `demo.py`)
 
@@ -24,7 +33,7 @@ classifier. Stdlib-only Python. AGPL-3.0.
 - 6/6 tests pass
 
 All numbers are SYNTHETIC: random patterns, fixed seeds, no
-physical hardware (UNRUN on any physical membrane).
+physical hardware. **No physical membrane was run or validated.**
 
 ## Run it
 
@@ -35,10 +44,21 @@ python demo.py    # the capacity curves (~1–4 min)
 
 ## Honest limits
 
-Random patterns are the easy case (best-case bound); the 0.90
-threshold defining P90 is a reporting choice; one-shot projection
-only (iterated recall excluded per the drift finding). Full
-account in `DESIGN.md`.
+- **No physical validation.** Everything here is a classical
+  software simulation of a complex outer-product memory. Nothing
+  was measured on a physical holographic device.
+- **Random patterns are the best case** (near-orthogonal by
+  construction). Correlated families have lower capacity; see
+  [`correlated-capacity`](https://github.com/sparkainlp-x/correlated-capacity)
+  for that bound.
+- **At σ = 0.30, P90 is only bounded between 4 and 8** — the
+  measured grid point is P90 = 4, and the next point fails the
+  0.90 threshold.
+- **One-shot projection only.** Iterated recall is excluded (per
+  the recall-drift finding); a capacity under iteration would be
+  a different quantity.
+- The 0.90 threshold defining P90 is a reporting choice. Full
+  account in `DESIGN.md`.
 
 ## Acknowledgements
 

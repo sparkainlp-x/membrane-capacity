@@ -67,7 +67,9 @@ classifier is fighting is exactly characterized.
 - **Random patterns are the easy case.** Near-orthogonal by
   construction (overlap ~ 1/√N). Correlated pattern families —
   the realistic case — will have lower capacity. This sweep does
-  not measure that; it bounds the best case.
+  not measure that; it bounds the best case. See
+  [`correlated-capacity`](https://github.com/sparkainlp-x/correlated-capacity).
+- **No physical membrane validation.** Synthetic software only.
 - **P90's 0.90 threshold is arbitrary.** Move it and the headline
   number moves. The curves are the result; P90 is a summary.
 - **One-shot projection only.** Iterated recall was deliberately
