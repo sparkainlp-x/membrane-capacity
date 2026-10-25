@@ -62,4 +62,4 @@ python demo.py    # the capacity curves (~1–4 min)
 
 ## Acknowledgements
 
-Thanks to Mun Seok Lee for discussions and contributions.
+Mun Seok Lee is acknowledged for discussion only. We cannot verify any specific contribution to this repository, and no file here is known to derive from a package received under his name. He is not an author of this release, and no endorsement of this code or its conclusions is implied.
