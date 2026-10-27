@@ -18,7 +18,7 @@ Seeded capacity sweep: random patterns, noisy probes, one-shot
 projection (argmax |⟨p|probe⟩|) as the classifier. Stdlib-only
 Python. AGPL-3.0.
 
-## Verified (SYNTHETIC — seeded simulation, output of `demo.py`)
+## Measured in this repo (SYNTHETIC — seeded simulation, output of `demo.py`)
 
 - Crosstalk floor vs theory √(π/4N): N = 64 → 0.1102 vs 0.1108
   (0.5% off); N = 128 → 0.0802 vs 0.0783 (2.4% off)
@@ -31,6 +31,8 @@ Python. AGPL-3.0.
   point tested, so the true P90 lies between 4 and 8; the grid is
   not fine enough to pin it more precisely
 - 6/6 tests pass
+
+**Uncertainty.** These are single seeded runs of `demo.py`: the accuracies and the crosstalk-floor comparison come from one random draw per grid point, with no repeats and no interval. The "0.5% off" and "2.4% off" gaps to theory are single-draw differences, not estimates of bias, and differences of that size should not be read as agreement or disagreement with the theory. Quantifying the spread needs repeated seeds, which would be a new experiment and is not done here.
 
 All numbers are SYNTHETIC: random patterns, fixed seeds, no
 physical hardware. **No physical membrane was run or validated.**
